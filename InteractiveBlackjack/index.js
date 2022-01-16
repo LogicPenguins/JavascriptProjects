@@ -1,3 +1,8 @@
+let player = {
+    name: `Per`,
+    chips: 200,
+}
+
 let cards = [];
 let sum = 0
 let has_blackjack = false;
@@ -8,10 +13,7 @@ let cards_el = document.querySelector(`#cards-el`);
 let player_el = document.querySelector(`#player-el`);
 let is_alive = false;
 
-let player = {
-    name: `Per`,
-    chips: 145
-}
+
 player_el.textContent = player.name + ": $" + player.chips;
 
 function get_random_card() {
@@ -65,3 +67,7 @@ function new_card() {
     }
 }
 
+
+for (let i=0; i<=4; i++) {
+    console.log(`This is iteration # ${i + 1}`)
+}
